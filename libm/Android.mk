@@ -413,8 +413,12 @@ LOCAL_SRC_FILES_x86_64 := amd64/fenv.c $(libm_ld128_src_files) $(libm_x86_64_arc
 LOCAL_SRC_FILES_mips += mips/fenv.c $(libm_mips_arch_files)
 
 LOCAL_C_INCLUDES_mips64 := $(libm_ld_includes)
+
 LOCAL_SRC_FILES_mips64 := mips/fenv.c $(libm_ld128_src_files)
 LOCAL_SRC_FILES_mips64 += $(libm_mips_arch_files)
+
+LOCAL_SRC_FILES_mips64 := mips/fenv.c $(libm_ld_src_files)
+
 
 include $(BUILD_STATIC_LIBRARY)
 
