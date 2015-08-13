@@ -419,7 +419,6 @@ LOCAL_SRC_FILES_mips64 += $(libm_mips_arch_files)
 
 LOCAL_SRC_FILES_mips64 := mips/fenv.c $(libm_ld_src_files)
 
-
 include $(BUILD_STATIC_LIBRARY)
 
 #
